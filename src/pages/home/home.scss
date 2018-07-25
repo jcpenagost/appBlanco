@@ -1,24 +1,16 @@
 page-home {
-    ion-title {
-        background-color:yellow;
-     }
-     ion-navbar{
-         background-color: aqua !important;
-     }
-     
-     ion-content{
-         background-color: aqua !important;
-     }
-     ion-icon{
-         background-color: brown !important;
-     }
     }
     .div1{
-        width: 100px;
-        height: 100px;
+        width: 100%;
+        height: 100%;
         position: relative;
-        left: 50px;
-        
+    }
+    .div1 img{
+        width: 90%;
+        height: 70%;
+        position: absolute;
+        top: 15px;
+        left: 5px;
     }
     .pricipal{
         width: 100%;
