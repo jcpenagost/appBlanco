@@ -15,7 +15,7 @@ import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angu
 })
 export class LoginPage {
 
-  usuario : string = "";
+  correo : string = "";
   password : string = "";
   
   constructor(public navCtrl: NavController, 
@@ -28,13 +28,13 @@ export class LoginPage {
   }
 
   showAlert(){
-    if (this.usuario===''||this.password==='') {
+    if (this.correo===''||this.password==='') {
         this.showAlert2('Faltan Datos', 'Usuario o clave vacíos');
     }
     else{
       const alert = this.alertCtrl.create({
       title: 'Acceso Denegado',
-      subTitle: 'Usuario o clave no existen: ' + this.usuario,
+      subTitle: 'Usuario o clave no existen: ' + this.correo,
       buttons: ['OK']
     });
     alert.present();
