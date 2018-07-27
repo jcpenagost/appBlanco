@@ -7,33 +7,45 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Registrate</ion-title>
+    <ion-title>Regístrate</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+          <ion-label class="letratitulo"> Regístrate con tu correo electrónico </ion-label>
     <ion-list>
         <ion-item>
           <ion-label floating> Correo electrónico </ion-label>
           <ion-input type="text" [(ngModel)]="correo"></ion-input>
         </ion-item>
         <ion-item>
-          <ion-label floating> Contraseña </ion-label>
-          <ion-input type="password" [(ngModel)]="password">  </ion-input>
-        </ion-item>
-      </ion-list>
-      <ion-list no-lines>
-        <ion-item>
-            <button ion-button block (click)="showAlert()"> Acceder </button>
+            <ion-label floating> Contraseña </ion-label>
+            <ion-input type="password" [(ngModel)]="password">  </ion-input>
           </ion-item>
-          <ion-item class="itemLink"> 
-              <label class="letraLink"  (click)="showPrompt()"> ¿Olvidaste tu Contaseña? </label>
+          <ion-item>
+              <ion-label floating> Confirma contraseña </ion-label>
+              <ion-input type="password" [(ngModel)]="confimpassword">  </ion-input>
+            </ion-item>
+            </ion-list>
+
+      <ion-list no-lines>
+          <ion-item class="itemLink">
+              <p>
+              <label class="letraTexto"> Al hacer clic en Registrarse, acepta los </label>
+              <label class="letraLink"  > <br>términos y condiciones</label>
+              <label class="letraTexto">y la</label>
+              <label class="letraLink"  ><br>política de privacidad.</label>
+            </p>
+          </ion-item>
+
+        <ion-item>
+            <button ion-button block > Registrarse </button>
           </ion-item>
           <ion-item class="itemLink">
-              <label class="letraTexto"> ¿No tiene una cuenta? </label>
-              <label class="letraLink"  (click)="registrate()"> Regístrate </label>
+              <label class="letraTexto"> ¿Ya tienes una cuenta? </label>
+              <label class="letraLink"  > Iniciar Sesión </label>
           </ion-item>
         
     </ion-list>
