@@ -9,7 +9,7 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { InicioPage } from '../pages/inicio/inicio';
 import {LoginPage} from '../pages/login/login';
-import {Login2Page} from '../pages/login2/login2';
+import {RegistratePage} from '../pages/registrate/registrate';
 
 @NgModule({
   declarations: [
@@ -17,7 +17,7 @@ import {Login2Page} from '../pages/login2/login2';
     HomePage,
     InicioPage,
     LoginPage,
-    Login2Page
+    RegistratePage
   ],
   imports: [
     BrowserModule,
@@ -30,7 +30,7 @@ import {Login2Page} from '../pages/login2/login2';
     HomePage,
     InicioPage,
     LoginPage,
-    Login2Page
+    RegistratePage
   ],
   providers: [
     StatusBar,

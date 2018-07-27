@@ -2,23 +2,24 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
- * Generated class for the Login2Page page.
+ * Generated class for the RegistratePage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
 
+@IonicPage()
 @Component({
-  selector: 'page-login2',
-  templateUrl: 'login2.html',
+  selector: 'page-registrate',
+  templateUrl: 'registrate.html',
 })
-export class Login2Page {
+export class RegistratePage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad Login2Page');
+    console.log('ionViewDidLoad RegistratePage');
   }
 
 }

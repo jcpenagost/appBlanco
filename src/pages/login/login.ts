@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
 
+import {RegistratePage} from '../registrate/registrate';
+
 /**
  * Generated class for the LoginPage page.
  *
@@ -17,8 +19,10 @@ export class LoginPage {
 
   correo : string = "";
   password : string = "";
+  pagina = RegistratePage;
   
-  constructor(public navCtrl: NavController, 
+  constructor(
+    public navCtrl: NavController, 
     public navParams: NavParams,
     public alertCtrl: AlertController ) {
   }
@@ -76,6 +80,9 @@ export class LoginPage {
       ]
     });
     prompt.present();
+  }
+  registrate(){
+    this.navCtrl.push(this.pagina);
   }
 
 }
