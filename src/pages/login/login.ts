@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
 
 import {RegistratePage} from '../registrate/registrate';
-
 /**
  * Generated class for the LoginPage page.
  *
@@ -16,9 +15,10 @@ import {RegistratePage} from '../registrate/registrate';
   templateUrl: 'login.html',
 })
 export class LoginPage {
-
-  correo : string = "";
-  password : string = "";
+  tipide : string = null;
+  numide : number = null;
+  correo : string = null;
+  password : string = null;
   pagina = RegistratePage;
   
   constructor(
@@ -32,7 +32,7 @@ export class LoginPage {
   }
 
   showAlert(){
-    if (this.correo===''||this.password==='') {
+    if (this.correo===null||this.password===null||this.tipide===null||this.numide===null) {
         this.showAlert2('Faltan Datos', 'Usuario o clave vacíos');
     }
     else{

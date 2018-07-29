@@ -16,6 +16,19 @@
 <ion-content padding>
     <ion-list>
       <ion-item>
+        <ion-label floating Gaming> Tipo Documento </ion-label>
+        <ion-select [(ngModel)]="tipide" interface="popover">
+          <ion-option value="CC">Cédula Ciudadanía</ion-option>
+          <ion-option value="TI">Tarjeta Identidad</ion-option>
+          <ion-option value="PA">Pasaporte</ion-option>
+          <ion-option value="CE">Cédula Extranjería</ion-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-label floating> Número Documento </ion-label>
+        <ion-input type="text" [(ngModel)]="numide"></ion-input>
+      </ion-item>
+      <ion-item>
         <ion-label floating> Correo electrónico </ion-label>
         <ion-input type="text" [(ngModel)]="correo"></ion-input>
       </ion-item>
