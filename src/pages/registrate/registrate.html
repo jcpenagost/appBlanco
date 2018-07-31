@@ -1,39 +1,57 @@
 <ion-header>
 
   <ion-navbar hideBackButton="true">
-    <ion-title>Regístrate</ion-title>
+    <ion-title>REGISTRO</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-    <ion-label class="letratitulo"> Regístrate con tu identificación y <br>correo electrónico </ion-label>
+    <ion-grid >
+        <ion-row>
+          <ion-col class="ioncol-opcimg">
+            <div class="div-opcimg1">
+              <img src="../../assets/imgs/Registro.png">
+            </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  
     <ion-list>
       <ion-item>
-        <ion-label floating Gaming> Tipo Documento </ion-label>
-        <ion-select [(ngModel)]="tipide" interface="popover">
-          <ion-option value="CC">Cédula Ciudadanía</ion-option>
-          <ion-option value="TI">Tarjeta Identidad</ion-option>
-          <ion-option value="PA">Pasaporte</ion-option>
-          <ion-option value="CE">Cédula Extranjería</ion-option>
+        <ion-label floating Gaming>{{labelTipoDoc}}</ion-label>
+        <ion-select [(ngModel)]="tipdoc" interface="popover">
+          <ion-option *ngFor="let item of itemsTipDoc" value="{{item.items_tipoDoc}}">{{item.itmes_descrip}}</ion-option>
         </ion-select>
       </ion-item>
       <ion-item>
-        <ion-label floating> Número Documento </ion-label>
-        <ion-input type="text" [(ngModel)]="numide"></ion-input>
+        <ion-label>{{labelDoc}}</ion-label>
+        <ion-input type="text" [(ngModel)]="numdoc"></ion-input>
       </ion-item>
+
       <ion-item>
-        <ion-label floating> Correo electrónico </ion-label>
+        <ion-label>{{labelNombres}}</ion-label>
+        <ion-input type="text" [(ngModel)]="nombres"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>{{labelApellidos}}</ion-label>
+        <ion-input type="text" [(ngModel)]="apellidos"></ion-input>
+      </ion-item>
+    
+        
+      <ion-item>
+        <ion-label>{{labelCorreo}}</ion-label>
         <ion-input type="text" [(ngModel)]="correo"></ion-input>
       </ion-item>
       <ion-item>
-        <ion-label floating> Contraseña </ion-label>
-        <ion-input type="password" [(ngModel)]="password">  </ion-input>
+        <ion-label>{{LabelClave}}</ion-label>
+        <ion-input type="password" [(ngModel)]="clave">  </ion-input>
       </ion-item>
       <ion-item>
-        <ion-label floating> Confirma contraseña </ion-label>
-        <ion-input type="password" [(ngModel)]="confimpassword">  </ion-input>
+        <ion-label>{{LabelConfirmaClave}}</ion-label>
+        <ion-input type="password" [(ngModel)]="confirclave">  </ion-input>
       </ion-item>
     </ion-list>
 
