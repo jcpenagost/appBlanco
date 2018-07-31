@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { NavController, NavParams, AlertController } from 'ionic-angular';
 
 import {RegistratePage} from '../registrate/registrate';
-//import {InicioPage} from '../inicio/inicio';
+import {InicioPage} from '../inicio/inicio';
 
 @Component({
   selector: 'page-login',
@@ -12,6 +12,7 @@ export class LoginPage {
   correo : string = null;
   password : string = null;
   registro = RegistratePage;
+  inicio = InicioPage;
 
   //Datos Leabel
   labelCorreo : string = 'Correo';

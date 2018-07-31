@@ -1,31 +1,33 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
 
 import {LoginPage} from '../login/login';
-/**
- * Generated class for the RegistratePage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import {InicioPage} from '../inicio/inicio';
 
-@IonicPage()
 @Component({
   selector: 'page-registrate',
   templateUrl: 'registrate.html',
 })
 export class RegistratePage {
-  pagina = LoginPage;
+  ingresar = LoginPage;
+  inicio = InicioPage;
+
+  //Datos Leabel
+  labelTipoDoc:string = 'Tipo Identifición';
+  labelDoc: string = 'Documento';
+  labelNombres:string = 'Nombres';
+  labelApellidos:string = 'Apellidos';
+  labelCorreo : string = 'Correo';
+  LabelClave : string = 'Clave';
+  LabelConfirmaClave : string = 'Confirma Clave';
+
   constructor(
     public navCtrl: NavController, 
     public navParams: NavParams) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad RegistratePage');
-  }
-  login(){
-    this.navCtrl.push(this.pagina);
+  irPagina(pagina){
+    this.navCtrl.push(pagina);
   }
 
 }

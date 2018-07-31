@@ -10,13 +10,10 @@ import { LoginPage } from '../login/login';
 export class InicioPage {
 
   ingresar=LoginPage;
-  /*   pagina2=
-    pagina3=
-    pagina4= */
   
   constructor(
-    private navCtrl: NavController, 
-    private navParams: NavParams) {
+    public navCtrl: NavController, 
+    public navParams: NavParams) {
   }
 
   irPagina(pagina){
