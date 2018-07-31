@@ -7,40 +7,56 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>nueva pagina inicio</ion-title>
+    <ion-title color=secondary  >INTEGRANDO</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content class="">
 
-  <p  relleno>
-    Columnas de ancho igual
-  </p>
   <ion-grid >
     <ion-row>
-      <ion-col>
-          <div class="">
-              <img src="../../assets/imgs/Registros.png">
+      <ion-col class="ioncol-topimg">
+          <div class="div-top-img">
+              <img src="../../assets/imgs/manosdecolores2.png">
            </div>
     </ion-col>
-      <ion-col>
-          <div class="">
-            <img src="../../assets/imgs/Curioso.png">
+    </ion-row>
+    <ion-row>
+      <ion-col class="ioncol-opcimg rdb_col1">
+          <div class="div-opcimg1" (click)="irPagina(ingresar)">
+               <img src="../../assets/imgs/llaveingreso.png">
           </div>
+    </ion-col>
+      <ion-col class="ioncol-opcimg rdb_col2">
+          <div class="div-opcimg2">
+             <img src="../../assets/imgs/sabiscasque.png">
+          </div>
+       </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="ioncol-opcimg rdb_col1">
+        <div class="div-opcimg2">
+           <img src="../../assets/imgs/Calendarcolor.png">
+        </div>
+      </ion-col>
+      <ion-col class="ioncol-opcimg rdb_col2">
+        <div class="div-opcimg2">
+           <img src="../../assets/imgs/megafono_denuncia1.png">
+        </div>
       </ion-col>
     </ion-row>
     <ion-row>
-      <ion-col>
-        <div class="">
-          <img src="../../assets/imgs/calendarios.png">
-       </div>
+        <ion-col class="bottomspace">
       </ion-col>
-      <ion-col>
-        <div class="">
-          <img src="../../assets/imgs/Alerta3.png">
-       </div>
-      </ion-col>
+      </ion-row>
+    <ion-row>
+      <ion-col class="bottomimg">
+          <div class="bottomdiv">
+            <img src="../../assets/imgs/esloganBogota1.jpg">
+           </div>
+    </ion-col>
     </ion-row>
+
   </ion-grid>
 
 

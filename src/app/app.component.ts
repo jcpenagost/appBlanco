@@ -13,8 +13,8 @@ import {RegistratePage} from '../pages/registrate/registrate';
   templateUrl: 'app.html'
 })
 export class MyApp {
-  //rootPage:any = InicioPage;
-  rootPage:any = LoginPage;
+  rootPage:any = InicioPage;
+  //rootPage:any = LoginPage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {

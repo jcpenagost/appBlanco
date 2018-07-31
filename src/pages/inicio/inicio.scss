@@ -1,42 +1,90 @@
 page-inicio {
-    ion-col div {
-        width: 130px;
-        height: 130px;
-     background-color: $fondoClaro;
-     border: 1px solid $borde1;
-     border-radius: 2px;
-     padding: 15px;
-     text-align: center;
-   }
-   div img{
-    width: 90%;
-    height: 90%;
-/*     position: absolute;
-    top: 20px;
-    left: 18px;
- */}
+    ion-title{
+        color: $borde1 !important;
+    }
 
+    .ioncol-topimg{
+        height: 150px;  
+        width: 100%;
+        border: 1px solid $borde1;
+        border-radius: 5px;
+        text-align: center;
+    }
+    .div-top-img{
+        height: 100%;
+        width: 100%;
+        image-rendering: auto;
+    }
+    .div-top-img img{
+        image-rendering: auto !important;
+    }
+    .ioncol-opcimg{
+        height: 110px;  
+        width: 100%;
+        border: 1px solid $borde1;
+        text-align: center;
+    }
+    .rdb_col1{
+        border-top-left-radius: 5%;
+        border-bottom-left-radius: 5%;
+    }
+    .rdb_col2{
+        border-top-right-radius: 5%;
+        border-bottom-right-radius: 5%;
+    }
+    .div-opcimg1{
+        height: 100px;  
+        width: 100%;
+    }
+    .div-opcimg1 img{
+        height: 80%;  
+        width: 60%;        
+    }
+    .div-opcimg2{
+        height: 100px;  
+        width: 100%;
+    }
+    .div-opcimg2 img{
+        height: 90%;  
+        width: 80%;        
+    }
+    .div-opcimg3{
+        height: 100px;  
+        width: 100%;
+    }
+    .div-opcimg3 img{
+        height: 90%;  
+        width: 80%;        
+    }
+    .bottomimg{
+        height: 70px;  
+        text-align: center;
+    }
+    .bottomdiv{
+        text-align: center;
+    }
+    .bottomdiv img{
+        height: 40%;  
+        width: 40%;
+    }
+    .bottomspace{
+        height: 40px;  
+        text-align: center;
+        
+    }
    p {
      padding: 10px 0 0 10px !important;
      margin: 0;
    }
-}
-    .grid-basic-page {
 
-     
-      }
 
-      .div1{
-        width: 100%;
-        height: 100%;
-        position: relative;
-    }
-    .div1 img{
-        width: 70%;
-        height: 70%;
-        position: absolute;
-        top: 20px;
-        left: 18px;
+
+    .div1{
+    width: 50px;
+    height: 50px;
+    border: 1px solid $borde1;
+    border-radius: 2px;
+    text-align: center;
     }
     .pricipal{
         width: 100%;
@@ -62,3 +110,4 @@ page-inicio {
         background-color: cornflowerblue;
     }
 
+}

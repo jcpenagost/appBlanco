@@ -23,6 +23,7 @@ import {RegistratePage} from '../pages/registrate/registrate';
     BrowserModule,
     FormsModule,
     IonicModule.forRoot(MyApp)
+//    IonicPageModule.forChild(InicioPage),
   ],
   bootstrap: [IonicApp],
   entryComponents: [

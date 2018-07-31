@@ -1,38 +1,31 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
+import { NavController, NavParams, AlertController } from 'ionic-angular';
 
 import {RegistratePage} from '../registrate/registrate';
-/**
- * Generated class for the LoginPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+//import {InicioPage} from '../inicio/inicio';
 
-@IonicPage()
 @Component({
   selector: 'page-login',
   templateUrl: 'login.html',
 })
 export class LoginPage {
-  tipide : string = null;
-  numide : number = null;
   correo : string = null;
   password : string = null;
-  pagina = RegistratePage;
+  registro = RegistratePage;
+
+  //Datos Leabel
+  labelCorreo : string = 'Correo';
+  LabelClave : string = 'Clave';
+
   
   constructor(
-    public navCtrl: NavController, 
-    public navParams: NavParams,
-    public alertCtrl: AlertController ) {
-  }
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad LoginPage');
+    private navCtrl: NavController, 
+    private navParams: NavParams,
+    private alertCtrl: AlertController ) {
   }
 
   showAlert(){
-    if (this.correo===null||this.password===null||this.tipide===null||this.numide===null) {
+    if (this.correo===null||this.password===null) {
         this.showAlert2('Faltan Datos', 'Usuario o clave vacíos');
     }
     else{
@@ -81,8 +74,11 @@ export class LoginPage {
     });
     prompt.present();
   }
-  registrate(){
+/*   registrate(){
     this.navCtrl.push(this.pagina);
+  }
+ */  irPagina(pagina){
+    this.navCtrl.push(pagina);
   }
 
 }

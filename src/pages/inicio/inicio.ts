@@ -1,25 +1,26 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
 
-/**
- * Generated class for the InicioPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { LoginPage } from '../login/login';
 
-@IonicPage()
 @Component({
   selector: 'page-inicio',
-  templateUrl: 'inicio.html',
+  templateUrl: 'inicio.html'
 })
 export class InicioPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  ingresar=LoginPage;
+  /*   pagina2=
+    pagina3=
+    pagina4= */
+  
+  constructor(
+    private navCtrl: NavController, 
+    private navParams: NavParams) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad InicioPage');
+  irPagina(pagina){
+    this.navCtrl.push(pagina);
   }
 
 }
