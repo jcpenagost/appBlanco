@@ -10,6 +10,7 @@ import { HomePage } from '../pages/home/home';
 import { InicioPage } from '../pages/inicio/inicio';
 import {LoginPage} from '../pages/login/login';
 import {RegistratePage} from '../pages/registrate/registrate';
+import {DenunciaPage} from '../pages/denuncia/denuncia';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import {RegistratePage} from '../pages/registrate/registrate';
     HomePage,
     InicioPage,
     LoginPage,
-    RegistratePage
+    RegistratePage,
+    DenunciaPage
   ],
   imports: [
     BrowserModule,
@@ -31,7 +33,8 @@ import {RegistratePage} from '../pages/registrate/registrate';
     HomePage,
     InicioPage,
     LoginPage,
-    RegistratePage
+    RegistratePage,
+    DenunciaPage
   ],
   providers: [
     StatusBar,

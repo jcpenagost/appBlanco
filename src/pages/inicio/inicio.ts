@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
 import { LoginPage } from '../login/login';
+import {DenunciaPage} from '../denuncia/denuncia';
 
 @Component({
   selector: 'page-inicio',
@@ -10,6 +11,7 @@ import { LoginPage } from '../login/login';
 export class InicioPage {
 
   ingresar=LoginPage;
+  denuncia=DenunciaPage;
   
   constructor(
     public navCtrl: NavController, 
