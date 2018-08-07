@@ -13,6 +13,7 @@ import {RegistratePage} from '../pages/registrate/registrate';
 import {DenunciaPage} from '../pages/denuncia/denuncia';
 import {Programar0Page} from '../pages/programar0/programar0';
 import {ProgramCategoriaPage} from '../pages/program-categoria/program-categoria';
+import {ListaeventosPage} from '../pages/listaeventos/listaeventos';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import {ProgramCategoriaPage} from '../pages/program-categoria/program-categoria
     RegistratePage,
     DenunciaPage,
     ProgramCategoriaPage,
+    ListaeventosPage,
     Programar0Page
   ],
   imports: [
@@ -40,6 +42,7 @@ import {ProgramCategoriaPage} from '../pages/program-categoria/program-categoria
     RegistratePage,
     DenunciaPage,
     ProgramCategoriaPage,
+    ListaeventosPage,
     Programar0Page
   ],
   providers: [

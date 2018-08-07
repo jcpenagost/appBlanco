@@ -10,26 +10,11 @@
 <ion-content padding>
 
   <ion-list>
-    <ion-item>
-      <ion-icon name='flash' item-start></ion-icon>
-      Deportes
-    </ion-item>
-    <ion-item>
-      <ion-icon name='flash' item-start></ion-icon>
-      Cultura
-    </ion-item>
-    <ion-item>
-      <ion-icon name='flash' item-start></ion-icon>
-      Talleres
-    </ion-item>
-    <ion-item>
-      <ion-icon name='flash' item-start></ion-icon>
-      Cursos
-    </ion-item>
-    <ion-item>
-      <ion-icon name='flash' item-start></ion-icon>
-      Eventos
-    </ion-item>
+
+    <button ion-item *ngFor="let item of itemsCategorias" (click)="irPagina($event, item)">
+      <ion-icon name="{{item.Categ_icono}}" item-left></ion-icon>
+      {{item.Categ_titulo}}
+    </button>
 
   </ion-list>
 </ion-content>
