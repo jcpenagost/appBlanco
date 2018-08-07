@@ -11,6 +11,8 @@ import { InicioPage } from '../pages/inicio/inicio';
 import {LoginPage} from '../pages/login/login';
 import {RegistratePage} from '../pages/registrate/registrate';
 import {DenunciaPage} from '../pages/denuncia/denuncia';
+import {Programar0Page} from '../pages/programar0/programar0';
+import {ProgramCategoriaPage} from '../pages/program-categoria/program-categoria';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import {DenunciaPage} from '../pages/denuncia/denuncia';
     InicioPage,
     LoginPage,
     RegistratePage,
-    DenunciaPage
+    DenunciaPage,
+    ProgramCategoriaPage,
+    Programar0Page
   ],
   imports: [
     BrowserModule,
@@ -34,7 +38,9 @@ import {DenunciaPage} from '../pages/denuncia/denuncia';
     InicioPage,
     LoginPage,
     RegistratePage,
-    DenunciaPage
+    DenunciaPage,
+    ProgramCategoriaPage,
+    Programar0Page
   ],
   providers: [
     StatusBar,
