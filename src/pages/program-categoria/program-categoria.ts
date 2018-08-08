@@ -17,11 +17,11 @@ export class ProgramCategoriaPage {
     public navCtrl: NavController, 
     public navParams: NavParams) {
       this.itemsCategorias=[];
-      this.itemsCategorias.push({Categ_id:0, Categ_icono:'flash',Categ_titulo:'Deportes'});
-      this.itemsCategorias.push({Categ_id:1, Categ_icono:'flash',Categ_titulo:'Cultura'});
-      this.itemsCategorias.push({Categ_id:2, Categ_icono:'flash',Categ_titulo:'Talleres'});
-      this.itemsCategorias.push({Categ_id:3, Categ_icono:'flash',Categ_titulo:'Cursos'});
-      this.itemsCategorias.push({Categ_id:4, Categ_icono:'flash',Categ_titulo:'Eventos'});
+      this.itemsCategorias.push({Categ_id:0, Categ_icono:'football',Categ_titulo:'Deportes'});
+      this.itemsCategorias.push({Categ_id:1, Categ_icono:'heart',Categ_titulo:'Cultura'});
+      this.itemsCategorias.push({Categ_id:2, Categ_icono:'construct',Categ_titulo:'Talleres'});
+      this.itemsCategorias.push({Categ_id:3, Categ_icono:'book',Categ_titulo:'Cursos'});
+      this.itemsCategorias.push({Categ_id:4, Categ_icono:'beer',Categ_titulo:'Eventos'});
   }
 
 /*   itemTapped(event, item) {
