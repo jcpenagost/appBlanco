@@ -7,7 +7,21 @@
 </ion-header>
 
 
-<ion-content padding>
+<ion-content >
+  <ion-list>
+    <button ion-item *ngFor="let item of itemsEventos" (click)="irPagina($event, item)">
+      <ion-avatar item-start> 
+        <img src="../../assets/imgs/colegios/{{item.event_imgcolegios}}">
+      </ion-avatar>
+      <h2>{{item.event_nombre}}</h2>
+      <p>{{item.event_objetivo}}</p>
+<!-- 
+      <ion-note item-end> {{item.event_fechaini}} {{item.event_horaini}} </ion-note>
+ -->
+    </button>
+  </ion-list>
+
+<!-- 
     <h3 text-center *ngIf="selectedItem">
         {{selectedItem.Categ_titulo}}
         <ion-icon [name]="selectedItem.Categ_icono"></ion-icon>
@@ -15,5 +29,5 @@
       <h4 text-center *ngIf="selectedItem">
         You navigated here from <b>{{selectedItem.Categ_titulo}}</b>
       </h4>
-    
+ -->    
 </ion-content>
