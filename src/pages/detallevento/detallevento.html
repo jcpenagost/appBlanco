@@ -1,24 +1,52 @@
-<!--
-  Generated template for the DetalleventoPage page.
 
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
 
   <ion-navbar>
-    <ion-title>detallevento</ion-title>
+    <ion-title>Detalle Evento</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-    <h3 text-center *ngIf="selectedItem">
-        {{selectedItem.event_nombre}}
-    </h3>
-    <h4 text-center *ngIf="selectedItem">
-        You navigated here from <b>{{selectedItem.event_objetivo}}</b>
-    </h4>
+  <ion-list>
+    <ion-grid >
+        <ion-row>
+          <ion-col class="ioncol-opcimg">
+            <div class="div-opcimg1">
+              <img src="../../assets/imgs/colegios/{{selectedItem.event_imgcolegios}}">
+            </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-item class="item-text-wrap">
+      <h2>{{labelNombre}}</h2> 
+      <h5>{{selectedItem.event_nombre}}</h5>
+    </ion-item>
+
+    <ion-item class="item-text-wrap">
+        <h2>{{labelObjetivo}}</h2> 
+        <h5>{{selectedItem.event_objetivo}}</h5>
+      </ion-item>
+
+    <ion-item class="item-text-wrap">
+      <h2>{{labelDescripcion}}</h2> 
+      <h5>{{selectedItem.event_descripcion}}</h5>
+    </ion-item>
+    <ion-item class="item-text-wrap">
+      <h2>{{labelFechaIni}}</h2> 
+      <h5>{{selectedItem.event_fechaini}}</h5>
+    </ion-item>
+    <ion-item class="item-text-wrap">
+      <h2>{{labelHoraIni}}</h2> 
+      <h5>{{selectedItem.event_horaini}}</h5>
+    </ion-item>
+    <ion-item class="item-text-wrap">
+      <h2>{{labelLugar}}</h2> 
+      <h5>{{selectedItem.event_lugar}}</h5>
+    </ion-item>
+
+  </ion-list>
 
 </ion-content>

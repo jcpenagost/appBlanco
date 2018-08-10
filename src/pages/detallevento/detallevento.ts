@@ -9,6 +9,13 @@ import { NavController, NavParams } from 'ionic-angular';
 export class DetalleventoPage {
   //Variables
   selectedItem: any;
+  //Datos Leabel
+  labelNombre:string='Nombre';
+  labelObjetivo:string='Objetivo';
+  labelDescripcion:string='Descripción';
+  labelFechaIni:string='Fecha de inicio';
+  labelHoraIni:string='Hora de Inicio';
+  labelLugar:string='Lugar';
 
 
   constructor(
